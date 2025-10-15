@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const sqlite3 = require('sqlite3').verbose();
 
-const PORT = 3000;
+const PORT = 6010;
 const db = new sqlite3.Database('./ecommerce.db');
 
 // Initialize database
@@ -95,10 +95,11 @@ const server = http.createServer(async (req, res) => {
     const url = req.url;
     const method = req.method;
 
-    // CORS headers
+    //CORS HEADERS
     res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With');
+    res.setHeader('Access-Control-Max-Age', '86400');
 
     if (method === 'OPTIONS') {
         res.writeHead(200);
