@@ -220,5 +220,5 @@ function showOrderSuccess(orderId) {
 // Continue shopping
 function continueShopping() {
     $('.order-modal').remove();
-    window.location.href = '/src/index.html';
+    window.location.href = '../index.html';
 }
