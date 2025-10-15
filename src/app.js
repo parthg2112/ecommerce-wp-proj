@@ -104,7 +104,7 @@ function renderCart() {
             <img src="${item.image}" alt="${item.name}">
             <div class="item-details">
                 <h3>${item.name}</h3>
-                <p class="item-price">$${item.price.toFixed(2)}</p>
+                <p class="item-price">${item.price.toFixed(2)}</p>
             </div>
             <div class="quantity-controls">
                 <button class="qty-btn" onclick="updateQty(${item.product_id}, -1)">−</button>
@@ -121,10 +121,10 @@ function renderCart() {
     
     billContainer.html(`
         <h2>Bill Details</h2>
-        <div class="bill-row"><span>Item Total</span><span>$${itemTotal.toFixed(2)}</span></div>
-        <div class="bill-row"><span>Taxes & Charges</span><span>$${taxes.toFixed(2)}</span></div>
+        <div class="bill-row"><span>Item Total</span><span>${itemTotal.toFixed(2)}</span></div>
+        <div class="bill-row"><span>Taxes & Charges</span><span>${taxes.toFixed(2)}</span></div>
         <hr>
-        <div class="bill-row total"><span>TO PAY</span><span>$${total.toFixed(2)}</span></div>
+        <div class="bill-row total"><span>TO PAY</span><span>${total.toFixed(2)}</span></div>
         <button class="btn btn-primary place-order-btn" onclick="placeOrder()">Place Order</button>
     `);
 }
@@ -222,3 +222,4 @@ function continueShopping() {
     $('.order-modal').remove();
     window.location.href = '../index.html';
 }
+
