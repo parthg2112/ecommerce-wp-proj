@@ -3,12 +3,12 @@ let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 // Hardcoded products - updated with salad names
 const products = [
-    { product_id: 1, name: 'Summer Salad', price: 1.25, image: '/images/plate-1.png' },
-    { product_id: 2, name: 'Russian Salad', price: 1.50, image: '/images/plate-2.png' },
-    { product_id: 3, name: 'Greek Salad', price: 1.50, image: '/images/plate-3.png' },
-    { product_id: 4, name: 'Cottage Pie', price: 1.75, image: '/images/plate-3.png' },
-    { product_id: 5, name: 'Caesar Salad', price: 1.35, image: '/images/plate-1.png' },
-    { product_id: 6, name: 'Garden Salad', price: 1.20, image: '/images/plate-2.png' }
+    { product_id: 1, name: 'Summer Salad', price: 125, image: '/images/plate-1.png' },
+    { product_id: 2, name: 'Russian Salad', price: 150, image: '/images/plate-2.png' },
+    { product_id: 3, name: 'Greek Salad', price: 150, image: '/images/plate-3.png' },
+    { product_id: 4, name: 'Cottage Pie', price: 175, image: '/images/plate-3.png' },
+    { product_id: 5, name: 'Caesar Salad', price: 135, image: '/images/plate-1.png' },
+    { product_id: 6, name: 'Garden Salad', price: 120, image: '/images/plate-2.png' }
 ];
 
 // Initialize
@@ -222,4 +222,5 @@ function continueShopping() {
     $('.order-modal').remove();
     window.location.href = '../index.html';
 }
+
 
