@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - FreshMeal</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <header class="top-bar">
+        <div class="container flex justify-content align-items">
+            <div class="auth flex align-items">
+                <div>
+                    <img src="/icons/user-icon.svg" alt="">
+                    <a href="#">Login</a>
+                </div>
+            </div>
+            <div class="icons" style="position: relative;">
+                <a href="/src/cart.html"><img src="/icons/cart.svg" alt=""></a>
+                <span class="cart-badge">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="top">
+            <div class="container flex justify-content">
+                <div class="logo">
+                    <img src="/icons/logo.svg" alt="">
+                </div>
+                <div class="contact flex align-items">
+                    <img src="/icons/phone.svg" alt="">
+                    <div>
+                        <h5>Call us :</h5>
+                        <h6>+91 9876543210</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="navbar magic-shadow">
+            <div class="container flex justify-center">
+                <a href="../index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#products">Products</a>
+            </div>
+        </div> -->
+    </nav>
+
+    <!-- Cart Section -->
+    <section class="cart-page">
+        <div class="container">
+            <div class="back-link">
+                <a href="../index.html">← Back to Shopping</a>
+            </div>
+            <h1 class="page-title">Your Cart</h1>
+            
+            <div class="cart-container">
+                <div class="cart-items-section" id="cart-items">
+                    <!-- Cart items will be rendered here -->
+                </div>
+                
+                <div class="bill-section" id="bill-details">
+                    <!-- Bill details will be rendered here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 FreshMeal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/src/app.js"></script>
+</body>
+</html>

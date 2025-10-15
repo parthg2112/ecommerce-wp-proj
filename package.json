@@ -1,0 +1,12 @@
+{
+  "name": "ecommerce-store",
+  "version": "1.0.0",
+  "description": "Food ordering ecommerce store",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.6"
+  }
+}
