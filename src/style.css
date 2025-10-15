@@ -163,6 +163,53 @@ header.top-bar .auth .divider{
 
 /* nav-bar */
 
+/* Fix slider button visibility */
+.top-products {
+    position: relative;
+}
+
+.top-products .container {
+    position: relative;
+}
+
+.prev-btn {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    z-index: 10;
+    transform: translateY(-50%);
+}
+
+.next-btn {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    z-index: 10;
+    transform: translateY(-50%);
+}
+
+.top-products .slider-button {
+    padding: 0.75rem 1rem;
+    border: none;
+    background: orange;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.top-products .slider-button:hover {
+    background: rgb(255, 140, 0);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.top-products .slider-button img {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+
 nav .top{
     padding: 1.5rem 0;
 }
